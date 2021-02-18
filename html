@@ -1,0 +1,72 @@
+
+<style>
+.button {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px 30px;
+   cursor: pointer;
+}
+  
+  .button:hover {
+  background-color: RoyalBlue;
+}
+  
+.ddd{
+    background-color: RoyalBlue;
+    border: none;
+    font-family: Arial;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px 30px;
+    color: white;
+  cursor: pointer;
+  }
+  
+  .ddd:hover {
+  background-color: DodgerBlue;
+}
+</style>
+
+<div style="text-align: center;">
+<a class="button" href="https://yourdownloadlinkhere.com" id="download" target="_blank"><i class="="></i>Please Visit The Next Post</a>
+
+<button class="ddd" id="btn"><i></i>Get The Phone Number</button>
+
+<script>
+var downloadButton = document.getElementById("download");
+var counter = 30;
+var newElement = document.createElement("p");
+newElement.innerHTML = "<b></b>";
+var id;
+
+downloadButton.parentNode.replaceChild(newElement, downloadButton);
+
+function startDownload() {
+    this.style.display = 'none';
+    id = setInterval(function () {
+        counter--;
+        if (counter < 0) {
+            newElement.parentNode.replaceChild(downloadButton, newElement);
+            clearInterval(id);
+        } else {
+            newElement.innerHTML = +counter.toString() + " <b> Seconds to Wait.</b>";
+        }
+    }, 1000);
+};
+
+var clickbtn = document.getElementById("btn");
+clickbtn.onclick = startDownload;
+</script></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive 3 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:50px"
+     data-ad-client="ca-pub-3032518203172077"
+     data-ad-slot="7606095229"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
